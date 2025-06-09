@@ -43,15 +43,16 @@ dns:
     - 1.0.0.1
 
 proxies:
-  - name: ProtonVPN   #Or whatever you want to name it
+  - name: ProtonVPN
     type: wireguard
-    server: 138.199.60.87
-    port: 51820
-    ip: 10.2.0.2
+    server: FILL_HERE
+    port: FILL_HERE
+    ip: FILL_HERE
     private-key: FILL_HERE
     public-key: FILL_HERE
     dns:
-      - 10.2.0.1 #This was my DNS in my wireguard profile. If you don't have one just delete the `dns:` field
+      - 10.2.0.1 
+      # This was my DNS in my wireguard profile. If you don't have one in your wireguard profile just delete both the `dns:` lines above
 
 proxy-groups:
   - name: PROXY
