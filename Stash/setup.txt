@@ -1,5 +1,8 @@
+###VPN
+You will need a VPN that will allow you to generate an Albania wireguard profile. I use ProtonVPN, but I hear SurfShark can do it too.
+
 ###Stash ( App store ) 
-- It uses Clash rules. Here is my recommendation: 
+- Now download Stash. Here is my recommendation for settings: 
 Settings:
 MitM > OFF
 Script > ON	
@@ -11,7 +14,7 @@ Concurrent Mode ON
 IPV6 Tunnel Routing ON ( if you have IPv6, otherwise OFF ) 
 Everything else in that view OFF
 
-###Below is my .yaml config file. Copy and paste it into your own .yaml config file and replace the FILL_HERE areas with your own wireguard profile info
+###Last, we need to create an config.yaml file that will tell it how to direct traffic. In my case I wanted rules for YouTube and Twitch, to avoid all ads. Below is my .yaml config file. Copy and paste it into your own .yaml config file and replace the FILL_HERE areas with your own wireguard profile info
 
 # STASH CONFIG (ProtonVPN via WireGuard + YouTube/Twitch Split Tunneling)
 
